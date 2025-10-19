@@ -12,12 +12,12 @@ def get_calculate(digit):
 def clear():
     result_label.config(text= '')
 
-
+    
 def get_operator(op): 
     global first_number, operator
 
     first_number = int(result_label['text'])
-    operator = op
+    operator = op 
     result_label.config(text= '')
 
 def get_result():
@@ -71,7 +71,7 @@ btn4.config(font= ('verdana', 14))
 
 btn5 = Button(root, text= '5', bg= '#00a65a', fg= 'white', width= 5, height= 2, command= lambda :get_calculate(5))
 btn5.grid(row= 2, column= 1)
-btn5.config(font= ('verdana', 14))
+btn5.config(font= ('verdana', 14))  
 
 btn6 = Button(root, text= '6', bg= '#00a65a', fg= 'white', width= 5, height= 2, command= lambda :get_calculate(6))
 btn6.grid(row= 2, column= 2)
@@ -114,7 +114,6 @@ btn_equal.config(font= ('verdana', 14))
 btn_div = Button(root, text= '/', bg= '#00a65a', fg= 'white', width= 5, height= 2, command= lambda : get_operator('/'))
 btn_div.grid(row= 4, column= 3)
 btn_div.config(font= ('verdana', 14)) 
-
 
 
 root.mainloop()
