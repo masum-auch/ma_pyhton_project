@@ -59,7 +59,7 @@ class NewsApp:
         details.pack(pady= (2, 20))
         details.config(font= ('verdana', 12))
 
-        frame = Frame(self.root, bg= 'black')
+        frame = Frame(self.root, bg= 'black') 
         frame.pack(expand= True, fill= BOTH)
 
         if index != 0:
