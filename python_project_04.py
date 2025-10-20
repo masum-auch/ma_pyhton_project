@@ -16,7 +16,7 @@ class NewsApp:
                             
 
         self.load_gui()
- 
+   
         self.load_news_item(0)
 
 
